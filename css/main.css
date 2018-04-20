@@ -1,0 +1,120 @@
+html {
+  font-family: "Times New Roman", Times, serif;
+    color: white;
+}
+
+#homeContent{
+    background-image: url('../images/home.png');
+    height:  100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+}
+
+#aboutContent{
+    background-image: url('../images/about.png');
+    text-align: center;
+    height:  100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#skillsContent{
+    background-image: url('../images/skills.png');
+    height:  100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contactContent{
+    background-image: url('../images/contact.png');
+    height:  100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scroll-down {
+    position: fixed;
+    top: 90%;
+}
+
+.scroll-up {
+   position: absolute; 
+    top: 80%;
+}
+
+.animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes bounce {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-10px);
+    }
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  .bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+  }
+
+  .transparent-background {
+      opacity: 0.7;
+  }
+ 
+  .std-margin {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .std-border {
+    border: 3px solid white;
+  }
+
+  #footer {
+    background: none !important;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    height: 10vh;
+  }
+
+  .social {
+    color: black;
+  }
+
+  .social:hover {
+    color: white;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .socialLinks {
+    padding-top: 5px;
+  }
+  .copyright {
+    margin-top: -15px !important;
+  }
