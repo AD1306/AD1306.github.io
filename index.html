@@ -30,14 +30,45 @@
 <body>
     <div id="fullpage">
         <div class="section" id="homeContent">
-            <h1 id="greet"></h1>
-            <div class=" row" id="aboutNav">
-                <div data-menuanchor="about" class="col s12 scroll-down">
-                    <a href="#about" class="white-text">
-                        <i class=" medium material-icons animated bounce">keyboard_arrow_down</i>
-                    </a>
+            <div class="row" id="navbar">
+                <div class="col s4 m4 ">
+                    <div data-menuanchor="about">
+                        <a class="white-text flow-text  menu-item" href="#about">ABOUT</a>
+                    </div>
+                </div>
+                <div class="col s4 m4">
+                    <div data-menuanchor="skills">
+                        <a  class="white-text flow-text  menu-item" href="#skills">SKILLS</a>
+                    </div>
+                </div>
+                <div class="col s4 m4 ">
+                    <div data-menuanchor="contact">
+                        <a  class="white-text flow-text  contact-menu" href="#contact">CONTACT</a>
+                    </div>
                 </div>
             </div>
+
+            <h1 id="greet"></h1>
+            <footer id="footer" class="transparent-background">
+                <div class="row socialLinks">
+                    <hr class="std-margin">
+                    <div class="col s3 m1 offset-s2 offset-m5 ">
+                        <a href="https://www.linkedin.com/in/adityadave1306/" target="_blank" class="social">
+                            <i class=" fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="col s3 m1 ">
+                        <a href="https://github.com/AD1306" target="_blank" class="social">
+                            <i class=" fab fa-github fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="col s4 m1 ">
+                        <a href="https://codepen.io/ad1306/" target="_blank" class="social">
+                            <i class=" fab fa-codepen fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
         </div>
         <div class="section" id="aboutContent">
             <div id="aboutDisplay">
@@ -214,31 +245,16 @@
                     </a>
                 </div>
             </div>
-            <footer id="footer" class="transparent-background">
+             <footer id="footer-contact" class="transparent-background">
                 <div class="row socialLinks">
                     <hr class="std-margin">
-                    <div class="col s3 m1 offset-s2 offset-m5 ">
-                        <a href="https://www.linkedin.com/in/adityadave1306/" target="_blank" class="social">
-                            <i class=" fab fa-linkedin fa-2x"></i>
-                        </a>
-                    </div>
-                    <div class="col s3 m1 ">
-                        <a href="https://github.com/AD1306" target="_blank" class="social">
-                            <i class=" fab fa-github fa-2x"></i>
-                        </a>
-                    </div>
-                    <div class="col s4 m1 ">
-                        <a href="https://codepen.io/ad1306/" target="_blank" class="social">
-                            <i class=" fab fa-codepen fa-2x"></i>
-                        </a>
-                    </div>
                 </div>
                 <div class="row copyright std-margin">
                     <p class="black-text center-align">&copy; Aditya Dave 2018</p>
                 </div>
-            </footer>
+            </footer> 
         </div>
-        
+
     </div>
     <ul id="myMenu">
         <li data-menuanchor="home" class="active">
@@ -253,8 +269,8 @@
         <li data-menuanchor="contact">
             <a href="#contact" class="white-text">Contact</a>
         </li>
-       
-       
+
+
     </ul>
 </body>
 

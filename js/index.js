@@ -13,18 +13,15 @@ $(document).ready(function () {
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
       if(anchorLink === 'skills'){
-        $("#aboutNav").hide();
         $("#homeNav").hide();
         skillsContent();
       } else if (anchorLink === 'about') {
-        $("#aboutNav").hide();
         $("#homeNav").hide();
         $("#aboutDisplay").fadeIn("slow");
       } else if (anchorLink === 'home') {
         $("#aboutNav").show();
         $("#homeNav").hide();
       } else if (anchorLink === 'contact') {
-        $("#aboutNav").hide();
         $("#homeNav").show();
         $("#contactDisplay").fadeIn("slow");        
       }
@@ -37,7 +34,6 @@ $(document).ready(function () {
   $("#backend").hide();
   $("#cloud").hide();
   $("#other").hide();
-  $("#aboutNav").show();
   $("#homeNav").hide();
   $("#aboutDisplay").hide();
   $("#contactDisplay").hide();

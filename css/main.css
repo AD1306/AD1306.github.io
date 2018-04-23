@@ -99,6 +99,13 @@ html {
     height: 10vh;
   }
 
+  #footer-contact {
+    background: none !important;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    height: 10vh;
+  }
   .social {
     color: black;
   }
@@ -118,3 +125,32 @@ html {
   .copyright {
     margin-top: -15px !important;
   }
+
+
+  #navbar {
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    background: none;
+    box-shadow: none;
+  }
+
+  .menu-item:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px whitesmoke;  
+    transform: scaleX(0);  
+    transition: transform 300ms ease-in-out;
+  }
+
+  .menu-item:hover:after { transform: scaleX(1); }
+
+  .contact-menu:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px whitesmoke;  
+    transform: scaleX(0);  
+    transition: transform 300ms ease-in-out;
+    width: 117%;
+  }
+  .contact-menu:hover:after { transform: scaleX(1); }
