@@ -1,5 +1,5 @@
 html {
-  font-family: "Times New Roman", Times, serif;
+  
     color: white;
 }
 
@@ -133,6 +133,14 @@ html {
     right: 5%;
     background: none;
     box-shadow: none;
+  }
+
+  .menu-item {
+    font-size: 20px;
+  }
+
+  .contact-menu {
+    font-size: 20px;
   }
 
   .menu-item:after {
