@@ -136,11 +136,11 @@ html {
   }
 
   .menu-item {
-    font-size: 20px;
+    font-size: 1.5em;
   }
 
   .contact-menu {
-    font-size: 20px;
+    font-size: 1.5em;
   }
 
   .menu-item:after {
