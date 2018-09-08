@@ -3,38 +3,20 @@ html {
     color: white;
 }
 
-#homeContent{
-    background-image: url('../images/home.png');
+body {
+    background-image: url('../images/background.jpg');
     height:  100vh; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#homeContent{
     text-align:center;
 }
 
 #aboutContent{
-    background-image: url('../images/about.png');
     text-align: center;
-    height:  100vh; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#skillsContent{
-    background-image: url('../images/skills.png');
-    height:  100vh; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#contactContent{
-    background-image: url('../images/contact.png');
-    height:  100vh; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .scroll-down {
@@ -107,7 +89,7 @@ html {
     height: 10vh;
   }
   .social {
-    color: black;
+    color: darkgray;
   }
 
   .social:hover {
@@ -162,3 +144,11 @@ html {
     width: 117%;
   }
   .contact-menu:hover:after { transform: scaleX(1); }
+
+  #speciality {
+    display: inline;
+  }
+
+
+
+ 

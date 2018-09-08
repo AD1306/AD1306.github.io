@@ -16,11 +16,13 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <!-- Custom JavaScript and CSS -->
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/main.css">
 
@@ -31,39 +33,50 @@
     <div id="fullpage">
         <div class="section" id="homeContent">
             <div class="row" id="navbar">
-                <div class="col s4 m4 ">
+                <div class="col s3 m3 ">
                     <div data-menuanchor="about">
                         <a class="white-text  menu-item" href="#about">ABOUT</a>
                     </div>
                 </div>
-                <div class="col s4 m4">
+                <div class="col s3 m3">
                     <div data-menuanchor="skills">
                         <a  class="white-text menu-item" href="#skills">SKILLS</a>
                     </div>
                 </div>
-                <div class="col s4 m4 ">
+                <div class="col s3 m3">
+                    <div data-menuanchor="projects">
+                        <a  class="white-text menu-item" href="#projects">WORK</a>
+                    </div>
+                </div>
+                <div class="col s3 m3 ">
                     <div data-menuanchor="contact">
                         <a  class="white-text contact-menu" href="#contact">CONTACT</a>
                     </div>
                 </div>
             </div>
 
-            <h1 id="greet"></h1>
+            <h2>HELLO, I'M ADITYA DAVE.</h2>
+            <h4 id="speciality"></h4>
             <footer id="footer" class="transparent-background">
                 <div class="row socialLinks">
                     <hr class="std-margin">
-                    <div class="col s3 m1 offset-s2 offset-m5 ">
-                        <a href="https://www.linkedin.com/in/adityadave1306/" target="_blank" class="social">
+                    <div class="col s3 m1 offset-m4 ">
+                        <a href="https://www.linkedin.com/in/adityadave1306/" aria-label="linkedin" target="_blank" class="social">
                             <i class=" fab fa-linkedin fa-2x"></i>
                         </a>
                     </div>
+                    <div class="col s3 m1">
+                        <a href="https://bitbucket.org/ad1306/" target="_blank" aria-label="bitbucket" class="social">
+                            <i class=" fab fa-bitbucket fa-2x"></i>
+                        </a>
+                    </div>
                     <div class="col s3 m1 ">
-                        <a href="https://github.com/AD1306" target="_blank" class="social">
+                        <a href="https://github.com/AD1306" target="_blank" aria-label="github" class="social">
                             <i class=" fab fa-github fa-2x"></i>
                         </a>
                     </div>
-                    <div class="col s4 m1 ">
-                        <a href="https://codepen.io/ad1306/" target="_blank" class="social">
+                    <div class="col s3 m1 ">
+                        <a href="https://codepen.io/ad1306/" target="_blank" aria-label="codepen" class="social">
                             <i class=" fab fa-codepen fa-2x"></i>
                         </a>
                     </div>
@@ -200,6 +213,16 @@
                 </div>
             </div>
         </div>
+        <div class="section" id="projectsContent">
+            <div id="projectsDisplay">
+                <div class="row">
+                    <h2>Test</h2>
+                    <div class="row ">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="section " id="contactContent">
             <div id="contactDisplay" class="row black white-text transparent-background container std-border ">
                 <h3 class="center-align">
@@ -250,7 +273,7 @@
                     <hr class="std-margin">
                 </div>
                 <div class="row copyright std-margin">
-                    <p class="black-text center-align">&copy; Aditya Dave 2018</p>
+                    <p class="white-text center-align">&copy; Aditya Dave 2018</p>
                 </div>
             </footer> 
         </div>
@@ -265,6 +288,9 @@
         </li>
         <li data-menuanchor="skills">
             <a href="#skills" class="white-text">Skills</a>
+        </li>
+        <li data-menuanchor="projects">
+            <a href="#projects" class="white-text">Work</a>
         </li>
         <li data-menuanchor="contact">
             <a href="#contact" class="white-text">Contact</a>

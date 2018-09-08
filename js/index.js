@@ -2,14 +2,14 @@
 $(document).ready(function () {
    $('#fullpage').fullpage({
     paddingTop: '0px',
-    anchors:['home', 'about', 'skills', 'contact'],
+    anchors:['home', 'about', 'skills','projects', 'contact'],
     scrollOverflow:true,
     scrollBar: false,
     menu: '#myMenu',
     navigation: true,
     slidesNavigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['Home', 'About', 'Skills', 'Contact'],
+    navigationTooltips: ['Home', 'About', 'Skills', 'Work', 'Contact'],
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
       if(anchorLink === 'skills'){
@@ -24,12 +24,14 @@ $(document).ready(function () {
       } else if (anchorLink === 'contact') {
         $("#homeNav").show();
         $("#contactDisplay").fadeIn("slow");        
+      } else if (anchorLink === 'projects') {
+        $("#homeNav").hide();
+        $("#projectsDisplay").fadeIn("slow");
       }
     } 
   });
   
   $(".section").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(e) {});
-  showText("#greet", dialogues[0], 0, 50);
   $("#frontend").hide();
   $("#backend").hide();
   $("#cloud").hide();
@@ -37,9 +39,20 @@ $(document).ready(function () {
   $("#homeNav").hide();
   $("#aboutDisplay").hide();
   $("#contactDisplay").hide();
+  $("#projectsDisplay").hide("slow");
+  var typed = new Typed('#speciality', {
+    strings: ["I'm a Front-End Developer ^1000", "I'm a Back-End Developer ^1000", "I'm a Full-Stack Developer ^1000"],
+    smartBackspace: true, 
+    typeSpeed: 30,
+    backSpeed: 50,
+    cursorChar: '|',
+    loop: true, 
+    loopCount: Infinity,
+    startDelay: 500
+  });
+  $(".typed-cursor").css("font-size","xx-large");
 });
 
-var dialogues = ["HELLO, I'M ADITYA DAVE."];
 
 function skillsContent() {
   $("#frontend").fadeIn("slow");
@@ -49,9 +62,3 @@ function skillsContent() {
 }
 
 
-var showText = function (target = undefined, message, index, interval) {
-  if (index < message.length) {
-      $(target).append(message[index++]);
-    setTimeout(function () { showText(target, message, index, interval); }, interval);
-  } 
-}
