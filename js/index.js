@@ -53,19 +53,22 @@ $(document).ready(function () {
   $(".typed-cursor").css("font-size", "xx-large");
   $(window).on('resize', resizeFunction)
   checkCurrentWindow();
+  $(".button-collapse").sideNav();
 });
 
 function checkCurrentWindow() {
-  if($(window).width() <= 375) {
+  if($("#mobileMenu").is(":visible") && $(window).width() < 993) {
     $("#navbar").hide()
-  } 
+  } else {
+    $("#navbar").show()
+  }
 }
 
 function resizeFunction() {
   var eventFired = 0;
   if (!eventFired) {
-    if ($(window).width() <= 375) {
-    $("#navbar").hide()
+    if ($("#mobileMenu").is(":visible") && $(window).width() < 993) {
+      $("#navbar").hide()
     } else {
       $("#navbar").show()
     }
