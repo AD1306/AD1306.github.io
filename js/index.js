@@ -1,18 +1,18 @@
 
 $(document).ready(function () {
-   $('#fullpage').fullpage({
+  $('#fullpage').fullpage({
     paddingTop: '0px',
-    anchors:['home', 'about', 'skills','projects', 'contact'],
-    scrollOverflow:true,
+    anchors: ['home', 'about', 'skills', 'projects', 'contact'],
+    scrollOverflow: true,
     scrollBar: false,
     menu: '#myMenu',
     navigation: true,
     slidesNavigation: true,
     navigationPosition: 'right',
     navigationTooltips: ['Home', 'About', 'Skills', 'Work', 'Contact'],
-    afterLoad: function(anchorLink, index){
+    afterLoad: function (anchorLink, index) {
       var loadedSection = $(this);
-      if(anchorLink === 'skills'){
+      if (anchorLink === 'skills') {
         $("#homeNav").hide();
         skillsContent();
       } else if (anchorLink === 'about') {
@@ -23,15 +23,15 @@ $(document).ready(function () {
         $("#homeNav").hide();
       } else if (anchorLink === 'contact') {
         $("#homeNav").show();
-        $("#contactDisplay").fadeIn("slow");        
+        $("#contactDisplay").fadeIn("slow");
       } else if (anchorLink === 'projects') {
         $("#homeNav").hide();
         $("#projectsDisplay").fadeIn("slow");
       }
-    } 
+    }
   });
-  
-  $(".section").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(e) {});
+
+  $(".section").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function (e) { });
   $("#frontend").hide();
   $("#backend").hide();
   $("#cloud").hide();
@@ -41,17 +41,36 @@ $(document).ready(function () {
   $("#contactDisplay").hide();
   $("#projectsDisplay").hide("slow");
   var typed = new Typed('#speciality', {
-    strings: ["I'm a Front-End Developer ^1000", "I'm a Back-End Developer ^1000", "I'm a Full-Stack Developer ^1000"],
-    smartBackspace: true, 
+    strings: ["I'm a Front-End Developer", "I'm a Back-End Developer", "I'm a Full-Stack Developer"],
+    smartBackspace: true,
     typeSpeed: 30,
     backSpeed: 50,
     cursorChar: '|',
-    loop: true, 
+    loop: true,
     loopCount: Infinity,
     startDelay: 500
   });
-  $(".typed-cursor").css("font-size","xx-large");
+  $(".typed-cursor").css("font-size", "xx-large");
+  $(window).on('resize', resizeFunction)
+  checkCurrentWindow();
 });
+
+function checkCurrentWindow() {
+  if($(window).width() <= 375) {
+    $("#navbar").hide()
+  } 
+}
+
+function resizeFunction() {
+  var eventFired = 0;
+  if (!eventFired) {
+    if ($(window).width() <= 375) {
+    $("#navbar").hide()
+    } else {
+      $("#navbar").show()
+    }
+  }
+}
 
 
 function skillsContent() {
