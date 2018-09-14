@@ -38,7 +38,7 @@
                 <div class="navbar-fixed ">
                     <nav>
                         <div class="nav-wrapper">
-                            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                            <a href="#" id="menu-trigger" data-activates="mobile-demo" class="button-collapse">
                                 <i class="material-icons">menu</i>
                             </a>
                         </div>
@@ -46,13 +46,16 @@
                 </div>
                 <ul class="side-nav" id="mobile-demo">
                     <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
                         <a href="#about">ABOUT</a>
                     </li>
                     <li>
                         <a href="#skills">SKILLS</a>
                     </li>
                     <li>
-                        <a href="#work">WORK</a>
+                        <a href="#projects">WORK</a>
                     </li>
                     <li>
                         <a href="#contact">CONTACT</a>
@@ -87,7 +90,8 @@
                 <div class="row socialLinks">
                     <hr class="std-margin">
                     <div class="col s3 m1 offset-m4 ">
-                        <a href="https://www.linkedin.com/in/adityadave1306/" aria-label="linkedin" target="_blank" class="social">
+                        <a href="https://www.linkedin.com/in/adityadave1306/" aria-label="linkedin" target="_blank"
+                            class="social">
                             <i class=" fab fa-linkedin fa-2x"></i>
                         </a>
                     </div>
@@ -113,7 +117,8 @@
             <div id="aboutDisplay">
                 <div class="row">
                     <div class="col s4 m2  offset-s4 offset-m5">
-                        <img src="https://lh6.googleusercontent.com/-T2eU2_89Sps/AAAAAAAAAAI/AAAAAAAAAAs/r6w_RMXKfhA/photo.jpg?sz=328" alt="ad" class="responsive-img circle std-border ">
+                        <img src="https://lh6.googleusercontent.com/-T2eU2_89Sps/AAAAAAAAAAI/AAAAAAAAAAs/r6w_RMXKfhA/photo.jpg?sz=328"
+                            alt="ad" class="responsive-img circle std-border ">
                     </div>
                 </div>
                 <div class="row">
@@ -123,8 +128,10 @@
                                 <h4 class="">ABOUT</h4>
                                 <hr>
                                 <p class="flow-text">
-                                    I am a Full-Stack and FHIR Developer based in Canada. I enjoy solving everyday programming challenges and learn new programming
-                                    languages. Other than programming, I love listening to music and travel. I have also
+                                    I am a Full-Stack and FHIR Developer based in Canada. I enjoy solving everyday
+                                    programming challenges and learn new programming
+                                    languages. Other than programming, I love listening to music and travel. I have
+                                    also
                                     recently picked up on reading books.
                                 </p>
                             </div>
@@ -134,8 +141,8 @@
             </div>
         </div>
         <div class="section" id="skillsContent">
-            <div class="row">
-                <div class="col s12 m6 ">
+            <div class="row ">
+                <div class="col s12 m4 offset-m2 ">
                     <div class="row" id="frontend">
                         <div class=" col s12 black white-text transparent-background std-border ">
                             <h3 class="center-align">FRONT-END</h3>
@@ -161,7 +168,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 ">
+                <div class="col s12 m4 ">
                     <div class="row" id="backend">
                         <div class=" col s12 black white-text transparent-background std-border ">
                             <h3 class="center-align">BACK-END</h3>
@@ -189,7 +196,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col s12 m6 ">
+                <div class="col s12 m4 offset-m2 ">
                     <div class="row" id="cloud">
                         <div class=" col s12 black white-text transparent-background std-border ">
                             <h3 class="center-align">CLOUD</h3>
@@ -213,7 +220,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 ">
+                <div class="col s12 m4 ">
                     <div class="row" id="other">
                         <div class=" col s12 black white-text transparent-background std-border ">
                             <h3 class="center-align">OTHER</h3>
@@ -242,9 +249,35 @@
         <div class="section" id="projectsContent">
             <div id="projectsDisplay">
                 <div class="row">
-                    <h2>Test</h2>
-                    <div class="row ">
-
+                    <div class="row">
+                          <h3 class="center-align"><u>PROJECTS</u></h3>
+                            
+                    </div>
+                    <div class="col s12 m4 offset-m2  "> 
+                        <div class="card small std-border black-text">
+                            <div class="card-image">
+                                <img src="./images/custom_toolchain.png">
+                            </div>
+                            <div class="card-content center-align">
+                                <p>An Custom IBM Bluemix Toolchain</p>
+                            </div>
+                            <div class="card-action black-text center-align ">
+                                <a target="_blank" class="waves-effect waves-light btn" href="https://github.com/AD1306/ibmCustomToolchain">Link To Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4  std-margin">
+                        <div class="card small std-border  black-text ">
+                            <div class="card-image">
+                                <img src="./images/mean_stack.png">
+                            </div>
+                            <div class="card-content center-align">
+                                <p>An MEAN Stack Application</p>
+                            </div>
+                            <div class="card-action center-align">
+                                <a target="_blank" class="waves-effect waves-light btn" href="https://github.com/AD1306/Mean-Stack">Link To Project</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

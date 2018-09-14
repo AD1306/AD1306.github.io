@@ -65,8 +65,8 @@ body {
   }
  
   .std-margin {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
   }
 
   .std-border {
@@ -163,3 +163,16 @@ nav {
 #sidenav-overlay {
   left: 300px;
 }
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background-color: white !important;
+}
+
+.hoverContent:hover {
+  opacity: 0.7 !important;
+  background-color: black;
+  color: white;
+}
+
+
+

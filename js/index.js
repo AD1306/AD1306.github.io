@@ -1,4 +1,4 @@
-
+var sidenav = false;
 $(document).ready(function () {
   $('#fullpage').fullpage({
     paddingTop: '0px',
@@ -54,6 +54,8 @@ $(document).ready(function () {
   $(window).on('resize', resizeFunction)
   checkCurrentWindow();
   $(".button-collapse").sideNav();
+  $(".side-nav li").on('click', hideMenu);
+  $(window).on('hashchange', hideMenu);
 });
 
 function checkCurrentWindow() {
@@ -82,5 +84,15 @@ function skillsContent() {
   $("#cloud").fadeIn("slow");
   $("#other").fadeIn("slow");
 }
+
+function hideMenu() {
+  if ($('#sidenav-overlay').length > 0 && sidenav === true) {
+    $("#menu-trigger").click(); 
+    sidenav = false;
+  } else {
+    sidenav = true;
+  } 
+}
+
 
 
