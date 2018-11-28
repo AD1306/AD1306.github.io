@@ -2,14 +2,14 @@ var sidenav = false;
 $(document).ready(function () {
   $('#fullpage').fullpage({
     paddingTop: '0px',
-    anchors: ['home', 'about', 'skills', 'projects', 'contact'],
+    anchors: ['home', 'about', 'skills', 'contact'],
     scrollOverflow: true,
     scrollBar: false,
     menu: '#myMenu',
     navigation: true,
     slidesNavigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['Home', 'About', 'Skills', 'Work', 'Contact'],
+    navigationTooltips: ['Home', 'About', 'Skills', 'Contact'],
     afterLoad: function (anchorLink, index) {
       var loadedSection = $(this);
       if (anchorLink === 'skills') {
@@ -24,9 +24,6 @@ $(document).ready(function () {
       } else if (anchorLink === 'contact') {
         $("#homeNav").show();
         $("#contactDisplay").fadeIn("slow");
-      } else if (anchorLink === 'projects') {
-        $("#homeNav").hide();
-        $("#projectsDisplay").fadeIn("slow");
       }
     }
   });
@@ -39,7 +36,6 @@ $(document).ready(function () {
   $("#homeNav").hide();
   $("#aboutDisplay").hide();
   $("#contactDisplay").hide();
-  $("#projectsDisplay").hide("slow");
   var typed = new Typed('#speciality', {
     strings: ["I'm a Front-End Developer", "I'm a Back-End Developer", "I'm a Full-Stack Developer"],
     smartBackspace: true,
