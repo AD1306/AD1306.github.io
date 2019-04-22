@@ -1,16 +1,15 @@
 html {
   
-    color: white;
+    color: #4db6ac;
     font-family: 'Ubuntu', sans-serif;
 }
 
 body {
-    background-image: url('../images/background.jpg');
-    height:  100vh; 
+    height: 100vh; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: #31333B; */
+    background-color: #222233; 
 }
 
 #homeContent{
@@ -63,7 +62,7 @@ body {
   }
 
   .transparent-background {
-      opacity: 0.7;
+    background-color: #222233; 
   }
  
   .std-margin {
@@ -91,11 +90,11 @@ body {
     height: 10vh;
   }
   .social {
-    color: darkgray;
+    color: #4db6ac;
   }
 
   .social:hover {
-    color: white;
+    color: #64ffda;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -125,6 +124,14 @@ body {
     left: 5%;
   }
 
+  #mobile-demo {
+    background-color: #222233 !important; 
+  }
+
+  #mobile-demo li a {
+    color: #4db6ac !important;   
+  }
+
   .menu-item {
     font-size: 1.5em;
   }
@@ -136,7 +143,7 @@ body {
   .menu-item:after {
     display:block;
     content: '';
-    border-bottom: solid 3px whitesmoke;  
+    border-bottom: solid 3px #4db6ac;  
     transform: scaleX(0);  
     transition: transform 300ms ease-in-out;
   }
@@ -146,10 +153,10 @@ body {
   .contact-menu:after {
     display:block;
     content: '';
-    border-bottom: solid 3px whitesmoke;  
+    border-bottom: solid 3px #4db6ac;  
     transform: scaleX(0);  
     transition: transform 300ms ease-in-out;
-    width: 117%;
+    width: 120%;
   }
   .contact-menu:hover:after { transform: scaleX(1); }
 
@@ -166,8 +173,14 @@ nav {
   left: 300px;
 }
 
+
+
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
-  background-color: white !important;
+  background-color: #4db6ac !important;
+}
+
+.fp-tooltip {
+  color: #4db6ac !important;
 }
 
 .hoverContent:hover {
@@ -176,5 +189,70 @@ nav {
   color: white;
 }
 
+.node circle {
+  fill: #fff;
+  stroke: whitesmoke;
+  stroke-width: 3px;
+}
+
+.link {
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+}
+
+.no-shadow {
+  box-shadow: none !important;
+}
+
+.tagBall {
+  position:relative;
+}
+
+.tag {
+  display:block;
+  position:absolute;
+  color:#000;
+}
+
+hr { 
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #4db6ac;
+  margin: 1em 0;
+  padding: 0;
+ }
+
+ #submitContact {
+   color: #222233 !important;
+ }
+
+.custom-border {
+    border-bottom: 1px solid #4db6ac !important;
+}
 
 
+
+.svg-content { 
+	display: block;
+	margin: auto;
+}
+
+.switch {
+  padding: 10px;
+}
+
+.optionsContainer {
+  background-color: #414161;
+  opacity: 0.8;
+  clear: both;
+  margin-top: 50px;
+  margin-right: 50px; 
+  float: right;
+}
+
+#tag-cloud {
+  margin: 0px auto !important; 
+  margin-top: 100px !important;
+}

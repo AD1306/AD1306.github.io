@@ -4,26 +4,35 @@
 <head>
     <title>Aditya Dave</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="https://lh6.googleusercontent.com/-T2eU2_89Sps/AAAAAAAAAAI/AAAAAAAAAAs/r6w_RMXKfhA/photo.jpg?sz=328">
+    <link rel="icon" type="image/png"
+        href="https://lh6.googleusercontent.com/-T2eU2_89Sps/AAAAAAAAAAI/AAAAAAAAAAs/r6w_RMXKfhA/photo.jpg?sz=328">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-        crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+        integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <!-- Compiled and minified JavaScript -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
+    <script src="js/scrolloverflow.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/jquery.svg3dtagcloud.js"></script>
+
+
 
     <!-- Custom JavaScript and CSS -->
     <script src="js/index.js"></script>
+    <!-- <script src="js/cloudTag.js"></script> -->
+
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Google Fonts -->
@@ -35,21 +44,20 @@
 <body>
 
     <div id="fullpage">
-
         <div class="section" id="homeContent">
             <div class="row" id="mobileMenu">
                 <div class="navbar-fixed ">
                     <nav>
                         <div class="nav-wrapper">
                             <a href="#" id="menu-trigger" data-activates="mobile-demo" class="button-collapse">
-                                <i class="material-icons">menu</i>
+                                <i class="fas fa-bars fa-2x teal-text text-lighten-2"></i>
                             </a>
                         </div>
                     </nav>
                 </div>
                 <ul class="side-nav" id="mobile-demo">
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="#home">HOME</a>
                     </li>
                     <li>
                         <a href="#about">ABOUT</a>
@@ -65,17 +73,17 @@
             <div class="row" id="navbar">
                 <div class="col s4 m4 ">
                     <div data-menuanchor="about">
-                        <a class="white-text  menu-item" href="#about">ABOUT</a>
+                        <a class=" teal-text text-lighten-2  menu-item" href="#about">ABOUT</a>
                     </div>
                 </div>
                 <div class="col s4 m4">
                     <div data-menuanchor="skills">
-                        <a class="white-text menu-item" href="#skills">SKILLS</a>
+                        <a class=" teal-text text-lighten-2 menu-item" href="#skills">SKILLS</a>
                     </div>
                 </div>
                 <div class="col s4 m4 ">
                     <div data-menuanchor="contact">
-                        <a class="white-text contact-menu" href="#contact">CONTACT</a>
+                        <a class=" teal-text text-lighten-2 contact-menu" href="#contact">CONTACT</a>
                     </div>
                 </div>
             </div>
@@ -90,7 +98,7 @@
                             <i class=" fab fa-linkedin fa-2x"></i>
                         </a>
                     </div>
-                    
+
                     <div class="col s2 m2 ">
                         <a href="https://github.com/AD1306" target="_blank" aria-label="github" class="social">
                             <i class=" fab fa-github fa-2x"></i>
@@ -106,24 +114,32 @@
         </div>
         <div class="section" id="aboutContent">
             <div id="aboutDisplay">
-                <div class="row">
-                    <div class="col s4 m2  offset-s4 offset-m5">
-                        <img src="https://lh6.googleusercontent.com/-T2eU2_89Sps/AAAAAAAAAAI/AAAAAAAAAAs/r6w_RMXKfhA/photo.jpg?sz=328"
-                            alt="ad" class="responsive-img circle std-border ">
+                <div class="row ">
+                    <div class="col s6 m2 offset-s3 offset-m3">
+                        <div class=" line-drawing-demo svg-container">
+                            <svg id="svg-logo" class="svg-content" viewBox="0 0 300 300"
+                                preserveAspectRatio="xMinYMin meet">
+                                <g class="lines">
+                                    <path
+                                        style="fill:none;fill-opacity:1;stroke:#4db6ac;stroke-width:1.10588026;stroke-opacity:1"
+                                        d="m 119.14467,213.85756 c -1.80918,-3.5952 -3.74731,-4.98717 -3.74731,-2.69133 0,1.46944 -6.0545,1.35924 -9.60759,-0.17487 -3.78619,-1.63476 -7.054121,-8.35401 -13.658823,-28.0841 -2.923518,-8.73336 -5.412798,-15.87885 -5.531734,-15.87885 -0.118937,0 -3.784462,0.93558 -8.145613,2.07907 -4.361152,1.14348 -12.996569,3.05862 -19.189818,4.25585 -6.193249,1.19725 -11.6775,2.80497 -12.187224,3.57273 -0.876484,1.3202 -3.350327,7.60513 -9.203703,23.38254 -1.411026,3.80333 -3.189225,7.10884 -3.951553,7.34557 -2.106007,0.65399 -5.989092,-6.22214 -5.993887,-10.61392 -0.0024,-2.13892 1.500398,-7.34665 3.339408,-11.57272 l 3.343654,-7.68379 H 31.88829 c -4.353282,0 -8.507008,-2.30809 -9.258246,-5.1445 -0.824004,-3.11116 0.967811,-4.49897 5.861139,-4.53966 1.874446,-0.0156 5.263067,-0.31906 7.530268,-0.6744 4.096134,-0.64198 4.19057,-0.77967 14.943965,-21.78793 5.95198,-11.62802 12.92447,-25.74404 15.494424,-31.36892 7.34819,-16.083048 9.259643,-18.839314 13.064953,-18.839314 4.7653,0 6.132573,2.750491 3.735346,7.514254 -2.012355,3.99894 -2.57787,11.94167 -1.016138,14.27178 0.665102,0.99233 1.891644,1.05533 4.810725,0.24708 11.054959,-3.06094 44.514124,-2.15431 64.440994,1.74614 11.61324,2.27315 26.51436,7.51409 31.30908,11.01187 6.34559,4.62914 8.06995,8.27821 8.00117,16.93203 -0.05,6.29502 -0.68153,8.78119 -3.71247,14.61545 -9.4271,18.14631 -29.73732,32.34222 -56.14396,39.24208 -6.5822,1.71988 -6.59808,1.73399 -5.77496,5.12818 1.07395,4.42849 0.76132,8.20676 -0.82937,10.02303 -1.98965,2.27183 -3.15375,1.75401 -5.20054,-2.31335 z m -3.20064,-7.26659 c -0.40837,-1.33221 -2.06966,-3.47971 -3.69178,-4.77221 -2.552,-2.03345 -2.97453,-3.26609 -3.13664,-9.15053 -0.12359,-4.48648 -1.53252,-10.64681 -4.14058,-18.10409 -3.62545,-10.3663 -4.17566,-11.27935 -6.635537,-11.01125 -1.475258,0.16079 -2.842889,0.44455 -3.039183,0.63055 -0.579295,0.54897 8.27222,25.46772 11.35706,31.97237 2.54409,5.36443 8.07202,12.85736 9.48554,12.85736 0.29897,0 0.20948,-1.08999 -0.19888,-2.4222 z m 22.58912,-17.59962 c 16.78553,-5.21214 33.18318,-15.83441 40.71451,-26.37454 8.03007,-11.23816 8.19124,-19.02129 0.48565,-23.45242 -11.89825,-6.84213 -40.0049,-12.1886 -65.09231,-12.38192 -8.85101,-0.0682 -16.367476,0.1359 -16.703264,0.45359 -0.335776,0.31768 1.410411,5.62783 3.880454,11.80035 2.47002,6.17251 4.49094,11.84698 4.49094,12.60992 0,1.80738 2.89608,1.75419 9.66963,-0.17759 3.01764,-0.86061 5.94235,-1.29784 6.49935,-0.97162 1.20508,0.70577 -4.71984,5.02397 -9.4301,6.87284 -1.83194,0.71907 -3.33029,1.61197 -3.32968,1.9842 9.6e-4,0.58264 9.38581,28.6682 10.69916,32.01881 0.57265,1.46096 9.5355,0.28264 18.11566,-2.38162 z M 71.94427,161.47221 c 7.714305,-1.49737 11.644291,-2.74192 11.644291,-3.68755 0,-0.78505 -2.010112,-9.07848 -4.466918,-18.42985 -2.456805,-9.35137 -4.6788,-17.97136 -4.937768,-19.15555 -0.510444,-2.33412 -4.447891,5.02252 -14.692743,27.45157 -8.833438,19.33905 -8.470998,17.58812 -3.472744,16.77667 2.354875,-0.38231 9.521522,-1.71219 15.925882,-2.95529 z m 26.130937,-5.70386 c 0.891214,-0.7075 -9.611932,-26.40647 -10.794553,-26.41197 -1.951659,-0.009 -1.787002,2.35643 0.781578,11.22833 1.210888,4.18241 2.771226,9.68787 3.467417,12.23435 1.114003,4.07473 1.565209,4.54281 3.762538,3.90326 1.373197,-0.39969 2.625555,-0.82898 2.78302,-0.95397 z" />
+                                    <ellipse
+                                        style="fill:none;fill-opacity:1;stroke:#4db6ac;stroke-width:0.29840335;stroke-opacity:1"
+                                        id="path823" ry="109.39362" rx="104.03345" cy="156.05905" cx="104.68097" />
+                                </g>
+                            </svg>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m6 offset-m3  black white-text transparent-background std-border ">
-                        <div class="card black">
-                            <div class="card-content white-text">
-                                <h4 class="">ABOUT</h4>
+                    <div class="col s12 m4 teal-text text-lighten-2 transparent-background">
+                        <div class="card no-shadow transparent-background">
+                            <div class="card-content  teal-text text-lighten-2">
+                                <h3 class="">ABOUT</h3>
                                 <hr>
-                                <p class="flow-text">
+                                <p class="flow-text left-align">
                                     I am a Full-Stack and FHIR Developer based in Canada. I enjoy solving everyday
                                     programming challenges and learn new programming
                                     languages. Other than programming, I love listening to music and travel. I have
-                                    also
-                                    recently picked up on reading books.
+                                    also recently picked up on reading books.
                                 </p>
                             </div>
                         </div>
@@ -132,113 +148,24 @@
             </div>
         </div>
         <div class="section" id="skillsContent">
-            <div class="row ">
-                <div class="col s12 m4 offset-m2 ">
-                    <div class="row" id="frontend">
-                        <div class=" col s12 black white-text transparent-background std-border ">
-                            <h3 class="center-align">FRONT-END</h3>
-                            <hr>
-                            <div class="row">
-                                <div class="col s6 m6 center-align">
-                                    <ul>
-                                        <li>Angular 2+</li>
-                                        <li>FHIR</li>
-                                        <li>Progressive Web Apps (PWA)</li>
-                                        <li>JavaScript</li>
-                                    </ul>
-                                </div>
-                                <div class="col s6 m6 center-align">
-                                    <ul>
-                                        <li>HTML5</li>
-                                        <li>CSS3</li>
-                                        <li>Jquery</li>
-                                        <li>AODA</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 ">
-                    <div class="row" id="backend">
-                        <div class=" col s12 black white-text transparent-background std-border ">
-                            <h3 class="center-align">BACK-END</h3>
-                            <hr>
-                            <div class="row">
-                                <div class="col s6 m6 center-align">
-                                    <ul>
-                                        <li>MEAN Stack</li>
-                                        <li>ASP .NET</li>
-                                        <li>RESTful APIs</li>
-                                        <li>PHP</li>
-                                    </ul>
-                                </div>
-                                <div class="col s6 m6 center-align">
-                                    <ul>
-                                        <li>C#</li>
-                                        <li>Java</li>
-                                        <li>MSSQL</li>
-                                        <li>MySQL</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="optionsContainer">
+                <div class="switch">
+                    <label class="teal-text text-lighten-2">
+                        HIERARCHY
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        ANIMATED
+                    </label>
                 </div>
             </div>
-            <div class="row">
-                <div class="col s12 m4 offset-m2 ">
-                    <div class="row" id="cloud">
-                        <div class=" col s12 black white-text transparent-background std-border ">
-                            <h3 class="center-align">CLOUD</h3>
-                            <hr>
-                            <div class="row">
-                                <div class="col s6 m6 center-align">
-                                    <ul>
-                                        <li>Nginx</li>
-                                        <li>IBM Bluemix</li>
-                                        <li>Firebase</li>
-                                    </ul>
-                                </div>
-                                <div class="col s6 m6 center-align">
-                                    <ul>
-                                        <li>Docker</li>
-                                        <li>Cloud Foundry</li>
-                                        <li>Virtual Machines</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 ">
-                    <div class="row" id="other">
-                        <div class=" col s12 black white-text transparent-background std-border ">
-                            <h3 class="center-align">OTHER</h3>
-                            <hr>
-                            <div class="row">
-                                <div class="col s6 m6 center-align">
-                                    <ul>
-                                        <li>Git</li>
-                                        <li>Bash Scripts</li>
-                                        <li>PHP</li>
-                                    </ul>
-                                </div>
-                                <div class="col s6 m6 center-align">
-                                    <ul>
-                                        <li>JUnit</li>
-                                        <li>Selenium</li>
-                                        <li>NPM</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row skillsTree container"></div>
+            <div class="row skillsCloud center" id="tag-cloud">
+                <h2>SKILLS</h2>
+                <hr class="container">
             </div>
         </div>
         <div class="section " id="contactContent">
-            <div id="contactDisplay" class="row black white-text transparent-background container std-border ">
+            <div id="contactDisplay" class="row  teal-text text-lighten-2 transparent-background container">
                 <h3 class="center-align">
                     CONTACT
                 </h3>
@@ -247,27 +174,28 @@
                     <div class="row">
                         <div class="input-field col s12 m8 offset-m2">
                             <i class="material-icons prefix">email</i>
-                            <input id="email" type="email" class="validate">
-                            <label for="email">Email</label>
+                            <input id="email" type="email" class="validate custom-border">
+                            <label for="email" class="teal-text text-lighten-2">Email</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 m8 offset-m2 ">
                             <i class="material-icons prefix">account_circle</i>
-                            <input id="fullname" type="text" class="validate">
-                            <label for="fullname">Full Name</label>
+                            <input id="fullname" type="text" class="validate custom-border">
+                            <label for="fullname" class="teal-text text-lighten-2">Full Name</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 m8 offset-m2">
                             <i class="material-icons prefix">message</i>
-                            <textarea id="comment" class="materialize-textarea"></textarea>
-                            <label for="comment">Comments</label>
+                            <textarea id="comment" class="materialize-textarea custom-border"></textarea>
+                            <label for="comment" class="teal-text text-lighten-2">Comments</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col s12 center-align">
-                            <button class="std-border btn waves-effect waves-light black white-text" type="submit" name="action">
+                            <button class="btn waves-effect waves-light teal-text text-lighten-2" id="submitContact"
+                                type="submit" name="action">
                                 Submit
                                 <i class="material-icons right">send</i>
                             </button>
@@ -277,7 +205,7 @@
             </div>
             <div class="row " id="homeNav">
                 <div data-menuanchor="home" class="col s12 center-align scroll-up">
-                    <a href="#home" class="white-text right">
+                    <a href="#home" class=" teal-text text-lighten-2 right">
                         <i class=" medium material-icons animated bounce">keyboard_arrow_up</i>
                     </a>
                 </div>
@@ -287,7 +215,7 @@
                     <hr class="std-margin">
                 </div>
                 <div class="row copyright std-margin">
-                    <p class="white-text center-align">&copy; Aditya Dave 2018</p>
+                    <p class=" teal-text text-lighten-2 center-align">&copy; Aditya Dave 2019</p>
                 </div>
             </footer>
         </div>
@@ -295,23 +223,21 @@
     </div>
     <ul id="myMenu">
         <li data-menuanchor="home" class="active">
-            <a href="#home" class="white-text">Home</a>
+            <a href="#home" class=" teal-text text-lighten-2">Home</a>
         </li>
         <li data-menuanchor="about">
-            <a href="#about" class="white-text">About</a>
+            <a href="#about" class=" teal-text text-lighten-2">About</a>
         </li>
         <li data-menuanchor="skills">
-            <a href="#skills" class="white-text">Skills</a>
-        </li>
-        <li data-menuanchor="projects">
-            <a href="#projects" class="white-text">Work</a>
+            <a href="#skills" class=" teal-text text-lighten-2">Skills</a>
         </li>
         <li data-menuanchor="contact">
-            <a href="#contact" class="white-text">Contact</a>
+            <a href="#contact" class=" teal-text text-lighten-2">Contact</a>
         </li>
 
 
     </ul>
+    <script src="js/skilltree.js"></script>
 </body>
 
 </html>
