@@ -119,6 +119,7 @@ function generateCloud() {
     { label: 'CSS3', url: '#', target: '_top' },
     { label: 'ANGULAR 2+', url: '#', target: '_top' },
     { label: 'DJANGO', url: '#', target: '_top' },
+    { label: 'REACTJS', url: '#', target: '_top' },
     { label: 'JAVASCRIPT', url: '#', target: '_top' },
     { label: 'TYPESCRIPT', url: '#', target: '_top' },
     { label: 'MATERIALIZE CSS', url: '#', target: '_top' },
