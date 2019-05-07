@@ -25,10 +25,6 @@ var treeData = {
                             "children": []
                         },
                         {
-                            "name": "DJANGO",
-                            "children": []
-                        },
-                        {
                             "name": "REACTJS",
                             "children": []
                         },
@@ -78,10 +74,6 @@ var treeData = {
                         },
                         {
                             "name": "C#",
-                            "children": []
-                        },
-                        {
-                            "name": "PYTHON",
                             "children": []
                         }
                     ]
@@ -208,10 +200,6 @@ var treeData = {
                     "children": [
                         {
                             "name": "BASH",
-                            "children": []
-                        },
-                        {
-                            "name": "PYTHON",
                             "children": []
                         }
                     ]

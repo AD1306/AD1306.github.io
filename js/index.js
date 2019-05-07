@@ -118,7 +118,6 @@ function generateCloud() {
     { label: 'HTML 5', url: '#', target: '_top' },
     { label: 'CSS3', url: '#', target: '_top' },
     { label: 'ANGULAR 2+', url: '#', target: '_top' },
-    { label: 'DJANGO', url: '#', target: '_top' },
     { label: 'REACTJS', url: '#', target: '_top' },
     { label: 'JAVASCRIPT', url: '#', target: '_top' },
     { label: 'TYPESCRIPT', url: '#', target: '_top' },
@@ -127,7 +126,6 @@ function generateCloud() {
     { label: 'JQUERY', url: '#', target: '_top' },
     { label: 'JAVA', url: '#', target: '_top' },
     { label: 'C#', url: '#', target: '_top' },
-    { label: 'PYTHON', url: '#', target: '_top' },
     { label: 'DOTNET CORE', url: '#', target: '_top' },
     { label: 'NODE JS', url: '#', target: '_top' },
     { label: 'EXPRESS JS', url: '#', target: '_top' },
@@ -147,7 +145,6 @@ function generateCloud() {
     { label: 'BITBUCKET', url: '#', target: '_top' },
     { label: 'GITHUB', url: '#', target: '_top' },
     { label: 'BASH SCRIPTS', url: '#', target: '_top' },
-    { label: 'PYTHON SCRIPTS', url: '#', target: '_top' },
     { label: 'LETSENCRYPT', url: '#', target: '_top' }
   ];
   var settings = {
