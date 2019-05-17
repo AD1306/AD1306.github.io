@@ -30,7 +30,7 @@ $(document).ready(function () {
   $("#homeNav").hide();
   $('.skillsTree').show();
   var typed = new Typed('#speciality', {
-    strings: ["I'm a Front-End Developer", "I'm a Back-End Developer", "I'm a Full-Stack Developer"],
+    strings: ["I'm a Full-Stack Developer", "I'm a Back-End Developer", "I'm a Front-End Developer"],
     smartBackspace: true,
     typeSpeed: 30,
     backSpeed: 50,
